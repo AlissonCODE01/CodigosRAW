@@ -1,0 +1,42 @@
+{
+	"nickfilmes": {
+    "enabled": true,
+    "predefined": false,
+    "private": false,
+    "name": "Nick Filmes",
+    "languages": "pt",
+    "base_url": "https://nickfilmes.net/?s=QUERYEXTRA",
+    "color": "FFFFFFFF",
+    "general_keywords": "{title:original}",
+     "parser": {
+    "row": "find_all(tag='article')",
+    "name": "item.find('a', class_='elementor-post__title').text.strip() if item.find('a', class_='elementor-post__title') else ''",
+    "torrent": "item(tag='a', attribute='href', order=0)"
+    },
+    "subpage": false,
+    "anime_extra": "",
+    "anime_keywords": "",
+    "anime_query": "",
+    "general_extra": "",
+    "general_query": "",
+    "language": null,
+    "login_failed": "",
+    "login_object": "",
+    "login_path": null,
+    "movie_extra": "",
+    "movie_keywords": "{title:original} {year}",
+    "movie_query": "",
+    "season_extra": "",
+    "season_extra2": "",
+    "season_keywords": "",
+    "season_keywords2": "",
+    "season_query": "",
+    "separator": "",
+    "show_query": "",
+    "subpage": false,
+    "tv_extra": "",
+    "tv_extra2": "",
+    "tv_keywords": "",
+    "tv_keywords2": ""
+    }
+}
